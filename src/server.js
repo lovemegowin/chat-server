@@ -7,7 +7,7 @@ import { v4 as uuidV4 } from 'uuid';
 const app = express();
 const serve = server.Server(app);
 const io = socketIO(serve, {
-    path: '/api/socket.io'
+    path: '/wss/socket.io'
 });
 const port = process.env.PORT || 5000;
 
