@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/join', (req, res) => {
+app.get('/api/join', (req, res) => {
     res.send({ link: uuidV4() });
 });
 
